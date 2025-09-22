@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search </title>
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .navbar {
+            width: 100%;
+            height: 60px;
+            background-color: rgba(71, 17, 166, 0.966);
+        }
+
+        .navbar-container {
+            display: flex;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            padding: 0 50px;
+            height: 100%;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-container {
+            flex: 1;
+            background-color: black;
+        }
+
+        .logo {
+            font-family: "Sen", sans-serif;
+            font-optical-sizing: auto;
+            font-size: 30px;
+            font-style: normal;
+            font-variation-settings: "slnt" 0;
+            color: #8c52ff;
+        }
+
+        .menu-container {
+            flex: 6;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        .menu-list {
+            color: white;
+            display: flex;
+            list-style: none;
+        }
+
+        .menu-list-item {
+            margin-right: 30px;
+        }
+
+        .menu-list-item.active {
+            font-weight: bold;
+            color: white;
+        }
+
+        .profile-container {
+            flex: 1.5;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .profile-text-container {
+            margin: 0 15px;
+            align-items: center;
+            display: flex;
+        }
+
+        .profile {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .sidebar {
+            width: 60px;
+            height: 100%;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .left-menu-icon {
+            color: white;
+            font-size: 20px;
+            margin-top: 60px;
+            margin-left: 5px;
+        }
+
+        .no-underline {
+            text-decoration: none;
+            color: white;
+            /* Optional: Inherit the color of the surrounding text */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-img">
+                <a href="file:///C:/Users/Snehal/Desktop/Sarthak/Coding/Micro%20project/MoviesWorld/html/home.html">
+                    <img src="./logo.png" height="100%" width="100%">
+                </a>
+            </div>
+            <div class="logo-container">
+                <a href="file:///C:/Users/Snehal/Desktop/Sarthak/Coding/Micro%20project/MoviesWorld/html/home.html">
+                    <h1 class="logo">Streamify</h1>
+                </a>
+            </div>
+
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <a href="file:///C:/Users/Snehal/Desktop/Sarthak/Coding/Micro%20project/MoviesWorld/html/home.html">
+                        <li class="menu-list-item active">
+                            Home</li>
+                    </a>
+                    <li class="menu-list-item active">Movies</li>
+                    <li class="menu-list-item active">TV shows</li>
+                    <li class="menu-list-item active">Trends</li>
+                </ul>
+            </div>
+
+            <!--<div class="search-container">
+              <form >
+                 <input type="search" placeholder="Seach here...">
+                 <i class="fa fa-search"></i>
+              </form>
+              <div>
+               
+              </div>
+           </div>-->
+
+            <div class="profile-container">
+                <img src="./profile_pic.jpeg" class="profile">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <!-- 
+                <div class="toggle"></div>
+                  <div class="toggel-img">
+                    <img src="C:\Users\Snehal\Desktop\Sarthak\Coding\Micro project\MoviesWorld\img\dark theme icon\sun.png"  width="20px" height="20px">
+                  </div>
+              </div>
+            -->
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="left-icon">
+                <center>
+                    <a href="https://www.instagram.com/dhaparesarthak/" target="_blank">
+                        <img class="left-menu-icon" src="./Socialmedia/ig logo.jpeg" height="45px" width="58px"
+                            alt="Instagram Icon">
+                    </a>
+                    <a href="https://www.instagram.com/dhaparesarthak/" target="_blank" class="no-underline">
+                        <h6 class="Social-media">Instagram</h6>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100092376634503" target="_blank">
+                        <img class="left-menu-icon" src="./Socialmedia/facebook-new.png" height="50px" width="50px"
+                            alt="Facebook Icon">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100092376634503" target="_blank"
+                        class="no-underline">
+                        <h6 class="Social-media">Facebook</h6>
+                    </a>
+                    <a href="https://x.com/SarthakDhapare" target="_blank" class="no-underline">
+                        <img class="left-menu-icon"
+                            src="./Socialmedia/64cebc6c19c2fe31de94c78e_X-vector-logo-download.png" height="45px"
+                            width="55px" alt="Twitter Icon">
+                        <h6 class="Social-media">Twitter</h6>
+                    </a>
+                    <a href="https://web.telegram.org/k/#8166085890" target="_blank" class="no-underline">
+                        <img class="left-menu-icon" src="./Socialmedia/121521-removebg-preview.png" height="50px"
+                            width="50px" alt="Telegram Icon">
+                        <h6 class="Social-media">Telegram</h6>
+                    </a>
+                </center>
+
+
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <!-- logo -->
+
+            <!-- end of logo -->
+            <!-- search container -->
+            <div class="search-container">
+                <div class="search-element">
+                    <h3>Search Movie:</h3>
+                    <input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box"
+                        onkeyup="findMovies()" onclick="findMovies()">
+
+                    <div class="search-list" id="search-list">
+                        <!-- list here -->
+                        <!-- <div class = "search-list-item">
+                        <div class = "search-item-thumbnail">
+                            <img src = "C:\Sarthak\Coding\Micro project\MoviesWorld\Streamify\medium-cover.jpg">
+                        </div>
+                        <div class = "search-item-info">
+                            <h3>Guardians of the Galaxy Vol. 2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end of search container -->
+
+            <!-- result container -->
+            <div class="container">
+                <div class="result-container">
+                    <div class="result-grid" id="result-grid">
+                        <!-- movie information here -->
+                        <!-- <div class = "movie-poster">
+                        <img src = "./medium-cover.jpg" alt = "movie poster">
+                    </div>
+                    <div class = "movie-info">
+                        <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                        <ul class = "movie-misc-info">
+                            <li class = "year">Year: 2017</li>
+                            <li class = "rated">Ratings: PG-13</li>
+                            <li class = "released">Released: 05 May 2017</li>
+                        </ul>
+                        <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                        <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                        <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                        <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+                        <p class = "language"><b>Language:</b> English</p>
+                        <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end of result container -->
+        </div>
+
+
+        <!-- movie app js -->
+        <script src="script.js">
+            // Titles: https://omdbapi.com/?s=thor&page=1&apikey=9fbcdf6f
+            // details: http://www.omdbapi.com/?i=tt3896198&apikey=9fbcdf6f
+
+            const movieSearchBox = document.getElementById('movie-search-box');
+            const searchList = document.getElementById('search-list');
+            const resultGrid = document.getElementById('result-grid');
+
+            // load movies from API
+            async function loadMovies(searchTerm) {
+                const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=9fbcdf6f`;
+                const res = await fetch(`${URL}`);
+                const data = await res.json();
+                // console.log(data.Search);
+                if (data.Response == "True") displayMovieList(data.Search);
+            }
+
+            function findMovies() {
+                let searchTerm = (movieSearchBox.value).trim();
+                if (searchTerm.length > 0) {
+                    searchList.classList.remove('hide-search-list');
+                    loadMovies(searchTerm);
+                } else {
+                    searchList.classList.add('hide-search-list');
+                }
+            }
+
+            function displayMovieList(movies) {
+                searchList.innerHTML = "";
+                for (let idx = 0; idx < movies.length; idx++) {
+                    let movieListItem = document.createElement('div');
+                    movieListItem.dataset.id = movies[idx].imdbID; // setting movie id in  data-id
+                    movieListItem.classList.add('search-list-item');
+                    if (movies[idx].Poster != "N/A")
+                        moviePoster = movies[idx].Poster;
+                    else
+                        moviePoster = "image_not_found.png";
+
+                    movieListItem.innerHTML = `
+        <div class = "search-item-thumbnail">
+            <img src = "${moviePoster}">
+        </div>
+        <div class = "search-item-info">
+            <h3>${movies[idx].Title}</h3>
+            <p>${movies[idx].Year}</p>
+        </div>
+        `;
+                    searchList.appendChild(movieListItem);
+                }
+                loadMovieDetails();
+            }
+
+            function loadMovieDetails() {
+                const searchListMovies = searchList.querySelectorAll('.search-list-item');
+                searchListMovies.forEach(movie => {
+                    movie.addEventListener('click', async () => {
+                        // console.log(movie.dataset.id);
+                        searchList.classList.add('hide-search-list');
+                        movieSearchBox.value = "";
+                        const result = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=9fbcdf6f`);
+                        const movieDetails = await result.json();
+                        // console.log(movieDetails);
+                        displayMovieDetails(movieDetails);
+                    });
+                });
+            }
+
+            function displayMovieDetails(details) {
+                resultGrid.innerHTML = `
+    <div class = "movie-poster">
+        <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
+    </div>
+    <div class = "movie-info">
+        <h3 class = "movie-title">${details.Title}</h3>
+        <ul class = "movie-misc-info">
+            <li class = "year">Year: ${details.Year}</li>
+            <li class = "rated">Ratings: ${details.Rated}</li>
+            <li class = "released">Released: ${details.Released}</li>
+        </ul>
+        <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
+        <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
+        <p class = "actors"><b>Actors: </b>${details.Actors}</p>
+        <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
+        <p class = "language"><b>Language:</b> ${details.Language}</p>
+        <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
+    </div>
+    `;
+            }
+
+
+            window.addEventListener('click', (event) => {
+                if (event.target.className != "form-control") {
+                    searchList.classList.add('hide-search-list');
+                }
+            });
+        </script>
+</body>
+
+</html>
